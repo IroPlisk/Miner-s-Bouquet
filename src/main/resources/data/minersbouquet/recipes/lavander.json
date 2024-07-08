@@ -1,0 +1,14 @@
+{
+  "type": "minersbouquet:base_vase",
+  "ingredients": [
+    {
+      "item": "minersbouquet:lavander_seeds"
+    },
+    {
+      "item": "minersbouquet:base_soil"
+    }
+  ],
+  "output": {
+    "item": "minersbouquet:lavander"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "dirt=false,facing=north": {
+      "model": "minersbouquet:block/base_vase"
+    },
+    "dirt=false,facing=east": {
+      "model": "minersbouquet:block/base_vase",
+      "y": 90
+    },
+    "dirt=false,facing=south": {
+      "model": "minersbouquet:block/base_vase",
+      "y": 180
+    },
+    "dirt=false,facing=west": {
+      "model": "minersbouquet:block/base_vase",
+      "y": 270
+    },
+    "dirt=true,facing=north": {
+      "model": "minersbouquet:block/base_vase_with_dirt"
+    },
+    "dirt=true,facing=east": {
+      "model": "minersbouquet:block/base_vase_with_dirt",
+      "y": 90
+    },
+    "dirt=true,facing=south": {
+      "model": "minersbouquet:block/base_vase_with_dirt",
+      "y": 180
+    },
+    "dirt=true,facing=west": {
+      "model": "minersbouquet:block/base_vase_with_dirt",
+      "y": 270
+    }
+  }
+}

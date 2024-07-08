@@ -1,0 +1,8 @@
+{
+  "itemGroup.minersbouquet_blocks": "Miner's Bouquet - Blocks",
+  "itemGroup.minersbouquet_items": "Miner's Bouquet - Items",
+
+  "item.minersbouquet.baseitem": "Base Item",
+  "item.minersbouquet.base_soil": "Base Soil",
+  "block.minersbouquet.base_vase": "Base Vase"
+}

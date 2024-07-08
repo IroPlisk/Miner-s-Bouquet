@@ -1,7 +1,14 @@
 package com.iroplisk.minersbouquet;
 
+import com.iroplisk.minersbouquet.entity.Entities;
+import com.iroplisk.minersbouquet.item.Items;
+import com.iroplisk.minersbouquet.recipe.ModRecipes;
+import com.iroplisk.minersbouquet.screen.BaseVaseMenu;
+import com.iroplisk.minersbouquet.screen.BaseVaseScreen;
+import com.iroplisk.minersbouquet.screen.Menus;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -41,7 +48,14 @@ public class MinersBouquet
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        Items.register(modEventBus);
+        com.iroplisk.minersbouquet.block.Blocks.register(modEventBus);
 
+        Entities.register(modEventBus);
+
+        Menus.register(modEventBus);
+
+        ModRecipes.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -75,6 +89,8 @@ public class MinersBouquet
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+
+            MenuScreens.register(Menus.BASE_VASE_MENU.get(), BaseVaseScreen::new);
         }
     }
 }

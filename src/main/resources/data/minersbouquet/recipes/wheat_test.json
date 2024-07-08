@@ -1,0 +1,14 @@
+{
+  "type": "minersbouquet:base_vase",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat_seeds"
+    },
+    {
+      "item": "minecraft:dirt"
+    }
+  ],
+  "output": {
+    "item": "minecraft:wheat"
+  }
+}
