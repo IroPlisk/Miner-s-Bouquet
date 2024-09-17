@@ -13,7 +13,7 @@ public class Items {
                 DeferredRegister.create(ForgeRegistries.ITEMS, MinersBouquet.MODID);
 
         // Items
-        public static final RegistryObject<Item> BASE_ITEM = ITEMS.register("baseitem",
+        public static final RegistryObject<Item> TROWEL = ITEMS.register("trowel",
                 () -> new Item(new Item.Properties().tab(ItemCreativeTab.MINERS_BOUQUET_CREATIVE_ITEM_TAB)));
 
         // Soils
@@ -24,9 +24,16 @@ public class Items {
         public static final RegistryObject<Item> LAVANDER_SEEDS = ITEMS.register("lavander_seeds",
                 () -> new Item(new Item.Properties().stacksTo(1).tab(ItemCreativeTab.MINERS_BOUQUET_CREATIVE_ITEM_TAB)));
 
+        public static final RegistryObject<Item> MARIGOLD_SEEDS = ITEMS.register("marigold_seeds",
+                () -> new Item(new Item.Properties().stacksTo(1).tab(ItemCreativeTab.MINERS_BOUQUET_CREATIVE_ITEM_TAB)));
+
         // Fruits/Flowers
         public static final RegistryObject<Item> LAVANDER = ITEMS.register("lavander",
                 () -> new Item(new Item.Properties().tab(ItemCreativeTab.MINERS_BOUQUET_CREATIVE_ITEM_TAB)));
+
+        public static final RegistryObject<Item> MARIGOLD = ITEMS.register("marigold",
+                () -> new Item(new Item.Properties().stacksTo(1).tab(ItemCreativeTab.MINERS_BOUQUET_CREATIVE_ITEM_TAB)));
+
 
         public static void register(IEventBus eventBus) {
                 ITEMS.register(eventBus);
