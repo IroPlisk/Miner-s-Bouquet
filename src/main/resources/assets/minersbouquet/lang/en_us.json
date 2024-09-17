@@ -4,5 +4,8 @@
 
   "item.minersbouquet.baseitem": "Base Item",
   "item.minersbouquet.base_soil": "Base Soil",
-  "block.minersbouquet.base_vase": "Base Vase"
+
+
+  "block.minersbouquet.base_vase": "Base Vase",
+  "block.minersbouquet.greenhouse": "Greenhouse"
 }

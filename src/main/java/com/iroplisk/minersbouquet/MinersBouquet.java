@@ -9,6 +9,8 @@ import com.iroplisk.minersbouquet.screen.Menus;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -91,6 +93,7 @@ public class MinersBouquet
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
 
             MenuScreens.register(Menus.BASE_VASE_MENU.get(), BaseVaseScreen::new);
+            ItemBlockRenderTypes.setRenderLayer(com.iroplisk.minersbouquet.block.Blocks.GREENHOUSE.get(), RenderType.translucent());
         }
     }
 }

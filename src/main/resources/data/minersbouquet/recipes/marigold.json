@@ -1,0 +1,14 @@
+{
+  "type": "minersbouquet:base_vase",
+  "ingredients": [
+    {
+      "item": "minersbouquet:marigold_seeds"
+    },
+    {
+      "item": "minersbouquet:base_soil"
+    }
+  ],
+  "output": {
+    "item": "minersbouquet:marigold"
+  }
+}

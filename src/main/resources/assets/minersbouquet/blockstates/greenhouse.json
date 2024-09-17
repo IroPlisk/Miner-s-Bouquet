@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "minersbouquet:block/greenhouse"
+    },
+    "facing=east": {
+      "model": "minersbouquet:block/greenhouse",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minersbouquet:block/greenhouse",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minersbouquet:block/greenhouse",
+      "y": 270
+    }
+  }
+}

@@ -1,6 +1,7 @@
 package com.iroplisk.minersbouquet.block;
 
 import com.iroplisk.minersbouquet.MinersBouquet;
+import com.iroplisk.minersbouquet.block.custom.GreenhouseBlock;
 import com.iroplisk.minersbouquet.block.custom.VaseBlock;
 import com.iroplisk.minersbouquet.creativetabs.BlockCreativeTab;
 import com.iroplisk.minersbouquet.creativetabs.ItemCreativeTab;
@@ -27,6 +28,11 @@ public class Blocks {
     public static final RegistryObject<Block> BASE_VASE = registerBlock("base_vase",
             () -> new VaseBlock(BlockBehaviour.Properties.of(Material.DECORATION)
                     .strength(1.0f).sound(SoundType.BONE_BLOCK).noOcclusion()), BlockCreativeTab.MINERS_BOUQUET_CREATIVE_BLOCK_TAB);
+
+    public static final RegistryObject<Block> GREENHOUSE = registerBlock("greenhouse",
+            () -> new GreenhouseBlock(BlockBehaviour.Properties.of(Material.DECORATION)
+                    .strength(1.0f).sound(SoundType.GLASS).noOcclusion()), BlockCreativeTab.MINERS_BOUQUET_CREATIVE_BLOCK_TAB);
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
