@@ -33,6 +33,10 @@ public class Items {
         public static final RegistryObject<Item> MARIGOLD = ITEMS.register("marigold",
                 () -> new Item(new Item.Properties().stacksTo(1).tab(ItemCreativeTab.MINERS_BOUQUET_CREATIVE_ITEM_TAB)));
 
+        public static final RegistryObject<Item> MARIGOLD = ITEMS.register("marigold",
+                () -> new Item(new Item.Properties().stacksTo(1).tab(ItemCreativeTab.MINERS_BOUQUET_CREATIVE_ITEM_TAB)));
+
+
         public static void register(IEventBus eventBus) {
                 ITEMS.register(eventBus);
         }
